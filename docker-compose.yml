@@ -13,6 +13,6 @@ services:
     ports:
       - 5435:5432
     environment:
-      POSTGRES_USER: postgres
+      POSTGRES_USER: test_user
       POSTGRES_PASSWORD: 123
-      POSTGRES_DB: nest
+      POSTGRES_DB: notes_test

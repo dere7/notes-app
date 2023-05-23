@@ -1,4 +1,4 @@
-const prisma = require("../prisma")
+const prisma = require("../utils/prisma")
 
 const notesService = {
   async getAll(skip = 0, take = 10) {

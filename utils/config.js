@@ -1,5 +1,3 @@
-require("dotenv").config()
-
 const { DB_URI, PORT, JWT_SECRET } = process.env
 
 module.exports = {
