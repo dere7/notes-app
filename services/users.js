@@ -9,7 +9,6 @@ const usersService = {
         password: await hashPassword(data.password),
       },
     })
-    console.log(user)
     return user
   },
   async findByEmail(email, includePassword = false) {

@@ -23,7 +23,6 @@ const userExtractor = async (req, res, next) => {
 
 const checkOwnershipNote = async (req, res, next) => {
   const note = await notesService.getOne(req.params.id)
-  console.log(note.authorId, req.user.sub)
   if (note.authorId === req.user.sub) next()
   else res.status(403).json({ error: "You are not the owner" })
 }
@@ -45,6 +44,7 @@ const errorHandler = (error, req, res, next) => {
         error.code === "P2002"
       )
         return res.status(403).json({ error: "email is already taken" })
+      // eslint-disable-next-line no-console
       console.log(error)
       return res
         .status(500)

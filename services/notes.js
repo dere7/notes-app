@@ -33,7 +33,6 @@ const notesService = {
   },
 
   async create(data, userId) {
-    console.log(userId)
     const note = await prisma.note.create({
       data: {
         ...data,
