@@ -1,0 +1,25 @@
+GET http://localhost:4001/notes
+
+###
+POST http://localhost:4001/notes
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYTE1ZjE3MC03MzcxLTQ5ZWMtYjlkOS00NTVmY2Q1MDI1NWEiLCJlbWFpbCI6ImpvaG4xMkBleGFtcGxlLmNvbSIsImlhdCI6MTY4NDgzMDExOH0.95hfgErBpuhOIOvEy_RT9xPdEuSJHeTcpvoamztHKww
+
+{
+    "title": "Getting started with Cloud computing",
+    "body": "cloud computing is exponentials growing field...."
+}
+
+###
+GET http://localhost:4001/notes/25b80111-7ff5-44ba-82d1-e236f177c42d
+###
+DELETE http://localhost:4001/notes/25b80111-7ff5-44ba-82d1-e236f177c42d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYTE1ZjE3MC03MzcxLTQ5ZWMtYjlkOS00NTVmY2Q1MDI1NWEiLCJlbWFpbCI6ImpvaG4xMkBleGFtcGxlLmNvbSIsImlhdCI6MTY4NDgzMDExOH0.95hfgErBpuhOIOvEy_RT9xPdEuSJHeTcpvoamztHKww
+###
+PUT http://localhost:4001/notes/b22d6bf4-f68d-405f-821b-6eb3ae906675
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYTE1ZjE3MC03MzcxLTQ5ZWMtYjlkOS00NTVmY2Q1MDI1NWEiLCJlbWFpbCI6ImpvaG4xMkBleGFtcGxlLmNvbSIsImlhdCI6MTY4NDgzMDExOH0.95hfgErBpuhOIOvEy_RT9xPdEuSJHeTcpvoamztHKww
+Content-Type: application/json
+
+{
+    "title": "Getting started with Backend Developments"
+}

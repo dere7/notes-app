@@ -1,0 +1,34 @@
+POST http://localhost:4001/users
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john12@example.com",
+    "password": "john123"
+}
+
+###
+POST http://localhost:4001/users
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john12example.com",
+    "password": "john123"
+}
+
+###
+POST http://localhost:4001/auth/login
+Content-Type: application/json
+
+{
+    "email": "john12@example.com",
+    "password": "john123"
+}
+
+###
+http://localhost:4001/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYTE1ZjE3MC03MzcxLTQ5ZWMtYjlkOS00NTVmY2Q1MDI1NWEiLCJlbWFpbCI6ImpvaG4xMkBleGFtcGxlLmNvbSIsImlhdCI6MTY4NDgzMDk0M30.I7_n-BkVQceMB15XO0L35rho__vnZGBKtH3urFuPRHw
+###
+http://localhost:4001/users/me/notes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYTE1ZjE3MC03MzcxLTQ5ZWMtYjlkOS00NTVmY2Q1MDI1NWEiLCJlbWFpbCI6ImpvaG4xMkBleGFtcGxlLmNvbSIsImlhdCI6MTY4NDgzMDk0M30.I7_n-BkVQceMB15XO0L35rho__vnZGBKtH3urFuPRHw
